@@ -1,5 +1,5 @@
-class SearchController > ApplicationController
+class SearchController < ApplicationController
   def index
-    render: index
+    render :index
   end
 end
