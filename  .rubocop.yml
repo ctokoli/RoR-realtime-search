@@ -9,9 +9,10 @@ AllCops:
     - "node_modules/**/*"
 
   DisplayCopNames: true
+  
 
 Layout/LineLength:
-  Max: 120
+  Max: 200
 Metrics/MethodLength:
   Include:
     - "app/controllers/*"
@@ -27,6 +28,8 @@ Metrics/ClassLength:
 Metrics/BlockLength:
   AllowedMethods: ['describe']
   Max: 30
+  Exclude:
+    - "config/**/*"
 
 Style/Documentation:
   Enabled: false
