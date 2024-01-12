@@ -13,9 +13,9 @@ This project is a web application built with Ruby on Rails and PostgreSQL that a
 
 ## Requirements
 
-- Ruby (>= 2.6.3)
-- Rails (>= 6.0.2)
-- PostgreSQL (>= 12.0)
+- Ruby (>= 3.2.2)
+- Rails (>= 7.1.1)
+- PostgreSQL (>= 15.0)
 
 ## Setup
 
