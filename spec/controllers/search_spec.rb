@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe SearchController, type: :controller do
-
   describe '#index' do
     it 'fetches data by IP group and renders JSON response' do
       allow(Search).to receive(:fetch_data_by_ip_group).and_return([{ id: 1, name: 'Example Data' }])
