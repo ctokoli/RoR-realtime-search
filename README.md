@@ -1,24 +1,51 @@
-# README
+# Realtime Search Analytics Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+This project is a web application built with Ruby on Rails and PostgreSQL that aims to create a realtime search box with analytics functionality. The primary objective is to allow users to search for articles in real-time and simultaneously record their search queries. The recorded data will be used to generate analytics and trends, revealing what users are searching for the most.
 
-* Ruby version
+## Features
 
-* System dependencies
+- **Realtime Search Box:** Users can input their search queries in a dynamic and responsive search box.
+- **Search Tracking:** The system captures and records search queries in real-time.
+- **IP Tracking:** The application tracks user searches based on their IP addresses.
+- **Analytics Dashboard:** An analytics dashboard displays trends and insights into the most searched terms.
 
-* Configuration
+## Requirements
 
-* Database creation
+- Ruby (>= 3.2.2)
+- Rails (>= 7.1.1)
+- PostgreSQL (>= 15.0)
 
-* Database initialization
+## Setup
 
-* How to run the test suite
+1. Clone the repository:
 
-* Services (job queues, cache servers, search engines, etc.)
+   ```bash
+   git clone https://github.com/ctokoli/RoR-realtime-search.git
 
-* Deployment instructions
 
-* ...
+2. Navigate to the project directory:
+   
+   ```bash
+   cd realtime-search-analytics
+
+3. Install dependencies:
+    
+    ```bash
+    bundle install
+
+4. Create and migrate the database:
+     
+     ```bash
+     rails db:create
+     rails db:migrate
+
+5. Start the Rails server:
+
+    ```bash
+    rails server
+
+6. Visit http://127.0.0.1:3000/ in your web browser. 
+
+

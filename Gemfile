@@ -77,3 +77,7 @@ gem 'faker', '~> 2.0'
 gem 'ransack'
 
 gem 'linguo'
+
+gem 'factory_bot_rails'
+
+gem 'rspec-rails', '~> 5.0'
