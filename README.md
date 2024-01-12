@@ -22,4 +22,30 @@ This project is a web application built with Ruby on Rails and PostgreSQL that a
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/realtime-search-analytics.git
+   git clone https://github.com/ctokoli/RoR-realtime-search.git
+
+
+2. Navigate to the project directory:
+   
+   ```bash
+   cd realtime-search-analytics
+
+3. Install dependencies:
+    
+    ```bash
+    bundle install
+
+4. Create and migrate the database:
+     
+     ```bash
+     rails db:create
+     rails db:migrate
+
+5. Start the Rails server:
+
+    ```bash
+    rails server
+
+6. Visit http://127.0.0.1:3000/ in your web browser. 
+
+
