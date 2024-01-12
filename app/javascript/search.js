@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         debounceTimeout = setTimeout(function () {
             const inputValue = searchInput.value.toLowerCase();
-
+            
             // Make an AJAX request to fetch autocomplete data
             fetch(`/search?query=${inputValue}`)
                 .then(response => response.json())
@@ -28,21 +28,20 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Function to display autocomplete results
     function displayResults(results) {
+        console.log(results.data);
         resultsContainer.innerHTML = '';
-
-        if (results.length == 0 || searchInput.value.length == 0 || searchInput.value == ' ' ) {
-            results = ['No results found'];
-            resultsContainer.classList.add('hidden');
-            return;
+        
+        if (results.data.length == 0 ) {
+            results.data = ['No results found'];
         }
 
-        results.forEach(result => {
+        results.data.forEach(result => {
             const listItem = document.createElement('li');
             listItem.textContent = result;
             listItem.classList.add('p-2', 'border', 'border-gray-300', 'cursor-pointer');
             resultsContainer.appendChild(listItem);
         });
-
+        
         resultsContainer.classList.remove('hidden');
     }
 });

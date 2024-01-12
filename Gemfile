@@ -74,3 +74,5 @@ gem "tailwindcss-rails", "~> 2.3"
 gem 'faker', '~> 2.0'
 
 gem 'ransack'
+
+gem 'linguo'
